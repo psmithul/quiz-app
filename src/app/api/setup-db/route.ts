@@ -19,7 +19,7 @@ export async function GET(request: Request) {
       .select('count')
       .limit(1);
 
-    let tablesExist = !tableCheckError;
+    const tablesExist = !tableCheckError;
     let message = '';
 
     // Create tables if they don't exist
